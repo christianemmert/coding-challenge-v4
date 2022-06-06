@@ -21,7 +21,7 @@ export const pence_to_pound = (pence: number): number => {
 /**
  *
  * @param organisation_unit
- * @returns - Fixed membership fee or 0
+ * @returns - Fixed membership fee or 0 if no fixed membership fee is set
  */
 export const get_fixed_membership_fee_amount = (organisation_unit: OrganisationUnit): number => {
     const parent_division = organisation_unit.get_parent_division();
